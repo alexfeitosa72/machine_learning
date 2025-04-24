@@ -1,0 +1,18 @@
+{
+    "sourceFile": "README.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1745533899819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1745533899819,
+            "name": "Commit-0",
+            "content": "# machine_learning\r\nRepositorio de ML para o PPCIC 2025\r\n\r\n\r\n# 🛠️ Primeiros Socorros do Git\r\n\r\n> ⚠️ Para usar este guia, certifique-se de que está na **pasta correta do seu projeto**!\r\n\r\n---\r\n\r\n## 🧼 1. Resetar o repositório Git local (sem apagar arquivos)\r\n\r\n```bash\r\nrm -rf .git\r\ngit init\r\n```\r\n\r\n---\r\n\r\n## 🔗 2. Conectar ao repositório remoto correto\r\n\r\n```bash\r\ngit remote add origin https://github.com/<usuario>/<repositorio>.git\r\n```\r\n\r\n✅ Dica: use `git remote -v` para verificar se a URL foi corretamente configurada.\r\n\r\n---\r\n\r\n## 📥 3. Puxar o `README.md` do remoto (sem sobrescrever seus arquivos)\r\n\r\n```bash\r\ngit fetch origin\r\ngit checkout -b main origin/main\r\n```\r\n\r\n---\r\n\r\n## 📝 4. Adicionar seus arquivos do projeto e comitar\r\n\r\n```bash\r\ngit add .\r\ngit commit -m \"Commit inicial do projeto local\"\r\n```\r\n\r\n---\r\n\r\n## 🚀 5. Enviar para o repositório remoto\r\n\r\n```bash\r\ngit push -u origin main\r\n```\r\n\r\n---\r\n\r\n## 🧯 Soluções rápidas para erros comuns\r\n\r\n### ❌ Repository not found\r\n\r\n- Verifique se o repositório realmente existe no GitHub.\r\n- Confirme a URL com: `git remote -v`\r\n- Corrija com:\r\n\r\n```bash\r\ngit remote set-url origin https://github.com/<usuario>/<repositorio>.git\r\n```\r\n\r\n---\r\n\r\n### 🔐 Erro de autenticação (repositório privado)\r\n\r\n- Use token pessoal (PAT) em vez de senha na URL HTTPS, ou\r\n- Configure acesso via SSH:\r\n\r\n```bash\r\nssh-keygen -t ed25519 -C \"seu-email@exemplo.com\"\r\neval \"$(ssh-agent -s)\"\r\nssh-add ~/.ssh/id_ed25519\r\n```\r\n\r\n---\r\n\r\n## ✅ Dica Final\r\n\r\nQuer evitar tudo isso? Clone o repositório **primeiro**, e só depois adicione os arquivos do seu projeto. Exemplo:\r\n\r\n```bash\r\ngit clone https://github.com/<usuario>/<repositorio>.git\r\ncd <repositorio>\r\n# Agora copie seus arquivos aqui dentro.\r\n```\r\n\r\n"
+        }
+    ]
+}
